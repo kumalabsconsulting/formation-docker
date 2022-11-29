@@ -18,13 +18,10 @@ git clone //https://github.com/kumalabsconsulting/formation-docker
 * Les élèves souhaitant utiliser une VM sous VirtualBox => [TP1](TP1/README.md)
 
 
-## Pour installer Docker directement sur votre machine
-
-Veuillez suivre le TP suivant [TP2](TP2/desktop.md)
-
 ## Menu des TP
-* [TP1](TP1/README.md) (Les prérequis)
-* [TP2](TP2/README.md) (Installation de Docker)
+* [TP1](TP1/README.md) &nbsp; (Les prérequis)
+* [TP2](TP2/README.md) &nbsp; (Installation de Docker)
+* [TP3](TP3/README.md) &nbsp; (Découverte de Docker)
 
 ## Des questions ?
 Posez-les directements à votre intervenant pendant le TP.
