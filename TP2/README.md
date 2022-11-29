@@ -27,15 +27,19 @@ L'environnement Matériel suivant est nécessaire:
 ## Installation de VirtualBox
 Dirigez-vous vers le site officiel https://www.virtualbox.org/wiki/Downloads, puis sélectionnez par rapport à votre OS
 
-## Téléchargement de la VDI Debian 11 Bullseye
-sous Windows:
-Démarrer => exécuter => cmd et tapez sur la touche entrée
+## Téléchargement de fichier de la machine virtuelle
+Ouvrez votre navigateur sur l'URL suivante:
 
-```dos
-curl https://sourceforge.net/projects/osboxes/files/v/vb/14-D-b/11/Workstation/64bit.7z/download
-```
+https://cloud.kumalabs.fr/index.php/s/M3pqCKyPZ9bzTn8/download/mydebian.ova
+
+    Le fichier mydebian.ova vous est fourni par votre instructeur. Il restera disponible jusqu'en février 2023.
+
+<br >
 
 
+| Login | mot de passe | Commentaires |
+|---|-----|-------|
+| epsi  | epsi1234         |  |
 
 
 ## Des questions ?
@@ -45,3 +49,4 @@ Posez-les directements à votre intervenant pendant le TP.
 <br >
 
 * [Haut de page](README.md#menu)
+* [Menu Principal](../README.md)
