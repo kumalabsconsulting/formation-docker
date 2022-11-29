@@ -62,7 +62,24 @@ Commands:
     wait      Block until a container stops, then print its exit code
 ```
 
-Par exemple, pour connaitre la version de docker:
+Par exemple, pour connaître la version de docker:
 ```bash
 docker version
+```
+
+## Récupérer l'image Docker mysql
+Pour cela, il faut se diriger sur le site de https://hub.docker.com puis rechercher l'image suivante:
+
+MariaDB (Fundation)
+
+
+
+```bash
+docker pull mariadb:latest
+```
+
+## Vérifier la disponibilité en local
+
+```bash
+docker images
 ```
