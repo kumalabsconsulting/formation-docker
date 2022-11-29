@@ -22,6 +22,7 @@ git clone //https://github.com/kumalabsconsulting/formation-docker
 * [TP1](TP1/README.md) &nbsp; (Les prérequis)
 * [TP2](TP2/README.md) &nbsp; (Installation de Docker)
 * [TP3](TP3/README.md) &nbsp; (Découverte de Docker)
+* [TP4](TP4/README.md) &nbsp; (Package and run a custom app using Docker)
 
 ## Des questions ?
 Posez-les directements à votre intervenant pendant le TP.
