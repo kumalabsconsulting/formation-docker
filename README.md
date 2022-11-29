@@ -25,3 +25,8 @@ git clone //https://github.com/kumalabsconsulting/formation-docker
 
 ## Des questions ?
 Posez-les directements à votre intervenant pendant le TP.
+
+
+## Ressources documentaire
+* [CLI cheat sheet by docker](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+* [Play with Docker](https://training.play-with-docker.com/beginner-linux/)

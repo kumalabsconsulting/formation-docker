@@ -67,6 +67,42 @@ Par exemple, pour connaître la version de docker:
 docker version
 ```
 
+
+
+## Lancez une commande dans un conteneur Alpine
+
+```bash
+docker container run alpine hostname
+```
+
+Docker continu de faire fonctionner le conteneur tant que le processus qui a démarré à l'interieur continu de fonctionner. Sinon il est en status Exited
+
+```bash
+docker container ls --all
+```
+
+## Lancez un conteneur interactif
+
+```bash
+docker container run --interactive --tty --rm alpine sh
+```
+ Dans cette exemple, nous demandons à Docker de lancer un conteneur basé sur Alpine dans un shell
+ * --interactive indique que nous souhaitons une session interactive
+ * --tty allocation d'un pseudo-tty
+ * --rm demande à Docker d'éffacer le conteneur une fois celui-ci arrêté
+
+Tapez les commandes suivantes dans le conteneur:
+ * ls / pour afficher le contenu de la root directory
+ * cat /etc/os-release pour indiquer la version d'Alpine
+ * ps aux pour afficher les process en cours
+ * exit pour quitter le shell du conteneur
+
+Vous remarquerez que le conteneur n'existe plus:
+```bash
+docker container ls --all
+```
+
+
 ## Recherchez l'image Docker MariaDB OFFICIEL
 Pour cela, il faut se diriger sur le site de https://hub.docker.com puis rechercher l'image suivante:
 
@@ -81,8 +117,45 @@ docker search --limit=10 --filter=is-official=true mariabd
 ## Récupérez l'image officiel de MariaDB
 
 ```bash
-docker pull mariadb:latest
+ docker container run \
+ --detach \
+ --name mydb \
+ -e MYSQL_ROOT_PASSWORD=my-secret-pw \
+ mysql:latest
 ```
+
+ * --detach demarre le conteneur de manière détaché
+ * --name permet de lui donner un petit nom personnalisé
+ * --e permet de surcharger une variable d'environnement
+
+```bash
+docker logs mydb
+```
+ * logs permet d'afficher les logs du conteneur
+
+```bash
+docker exec -it mydb bash
+```
+ * exec permet d'exécuter la commande => ici bash dans le container déjà lancé
+
+Vérifiez que le mot de passe précédement donné MYSQL_ROOT_PASSWD fonctionne
+
+```bash
+mysql -u root -p
+```
+
+Sortez du container en tapant exit
+
+Une autre commande interessante:
+```bash
+docker exec -it mydb mysql --user=root --password=$MYSQL_ROOT_PASSWORD --version
+```
+
+Elle vous permet de lancer la commande mysql et d'en demander la version
+
+
+
+
 
 ## Vérifier la disponibilité en local
 
