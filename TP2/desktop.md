@@ -15,7 +15,7 @@ Suivre les instruction de l'installateur.
 Ne pas prendre la version desktop pour Linux et suivre le [TP1](../TP1/README.md)
 
 ## Et après ?
-* Dirigez-vous vers le => [TP3](TP3/README.md)
+* Dirigez-vous vers le => [TP3](../TP3/README.md)
 
 
 ## Des questions ?

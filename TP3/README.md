@@ -67,12 +67,18 @@ Par exemple, pour connaître la version de docker:
 docker version
 ```
 
-## Récupérer l'image Docker mysql
+## Recherchez l'image Docker MariaDB OFFICIEL
 Pour cela, il faut se diriger sur le site de https://hub.docker.com puis rechercher l'image suivante:
 
 MariaDB (Fundation)
 
+ou bien via la commande docker
 
+```bash
+docker search --limit=10 --filter=is-official=true mariabd
+```
+
+## Récupérez l'image officiel de MariaDB
 
 ```bash
 docker pull mariadb:latest
@@ -83,3 +89,10 @@ docker pull mariadb:latest
 ```bash
 docker images
 ```
+
+## Récupérer l'image Docker ngnix OFFICIEL
+A vous de jouer !
+
+
+* [Haut de page](README.md#menu)
+* [Menu Principal](../README.md#menu-des-tp)
