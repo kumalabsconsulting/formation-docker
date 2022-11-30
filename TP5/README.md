@@ -31,7 +31,7 @@ server {
         listen 80;
         listen [::]:80;
 
-        server_name localhost your_domain www.your_domain;
+        server_name mywordpress.kumalabs.consulting;
 
         index index.php index.html index.htm;
 
@@ -43,7 +43,7 @@ server {
         }
 
         location / {
-                try_files $uri $uri/ /index.php$is_args$args;
+                try_files $uri /index.php$is_args$args;
         }
 
         location ~ \.php$ {
@@ -72,7 +72,8 @@ server {
         }
 }
 ```
-
+On peut remarquer que le serveur name est **mywordpress.kumalabs.consulting**. Laissez-le, il pointe directement sur votre ip 127.0.0.1 (localhost).
+<br >
 ### Définition des variable d'environnements
 
 ```bash
@@ -271,9 +272,17 @@ networks:
     driver: bridge
 ```
 
+Et voilà, votre wordpress est prêt à être paramétré.
 
+<br >
+<br >
 
 ## Sources documentaire
 * [Docker Volumes](https://docs.docker.com/storage/volumes/)
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose)
 * [Examples Volumes](https://devopscell.com/docker/docker-compose/volumes/2018/01/16/volumes-in-docker-compose.html)
+
+
+## MENU
+* [Haut de page](README.md#objectif)
+* [Menu Principal](../README.md#menu-des-tp)
