@@ -111,7 +111,7 @@ MariaDB (Fundation)
 ou bien via la commande docker
 
 ```bash
-docker search --limit=10 --filter=is-official=true mariabd
+docker search --limit=10 --filter=is-official=true mariadb
 ```
 
 ## Récupérez l'image officiel de MariaDB
@@ -124,7 +124,7 @@ docker search --limit=10 --filter=is-official=true mariabd
  mysql:latest
 ```
 
- * --detach demarre le conteneur de manière détaché
+ * --detach le mode détaché permet de ne pas bloquer votre terminal. Dès que le conteneur est lancé, docker vous rend la main
  * --name permet de lui donner un petit nom personnalisé
  * --e permet de surcharger une variable d'environnement
 
