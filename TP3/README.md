@@ -75,7 +75,7 @@ docker version
 docker container run alpine hostname
 ```
 
-Docker continu de faire fonctionner le conteneur tant que le processus qui a démarré à l'interieur continu de fonctionner. Sinon il est en status Exited
+Docker continue de faire fonctionner le conteneur tant que le processus qui a démarré à l'interieur continue de fonctionner. Sinon il est en status Exited
 
 ```bash
 docker container ls --all
@@ -163,7 +163,7 @@ Elle vous permet de lancer la commande mysql et d'en demander la version
 docker images
 ```
 
-## Récupérer l'image Docker ngnix OFFICIEL
+## Récupérer l'image Docker nginx OFFICIEL
 A vous de jouer !
 
 
