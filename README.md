@@ -13,7 +13,7 @@ Ceux qui veulent installer Docker directement sur leur machine peuvent le faire 
 Simple, il suffit de taper la commande suivante:
 
 ```
-git clone //https://github.com/kumalabsconsulting/formation-docker
+git clone https://github.com/kumalabsconsulting/formation-docker
 ```
 
 ## Comment se diriger dans ce TP ?
